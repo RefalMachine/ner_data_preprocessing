@@ -174,3 +174,39 @@ class FoldsGenerator():
             all_docs.update(folds_docs[i])
 
         assert len(all_docs) == doc_count
+
+    @staticmethod
+    def validate_folds(folds_masked_dir, folds_count=4):
+        folds_data = []
+        folds_all_test = set()
+        folds_all_train_dev = set()
+        for fold in range(1, folds_count + 1):
+            fold_dir = folds_masked_dir.replace('{}', str(fold))
+            fold_train_dev_file_path = os.path.join(fold_dir, 'train_dev.txt')
+            fold_test_file_path = os.path.join(fold_dir, 'test.txt')
+
+            with codecs.open(fold_train_dev_file_path, 'r') as file_descr:
+                train_dev_docs = file_descr.read().strip().split('<DOCSTART>\n\n')
+                train_dev_docs = [doc.strip() for doc in train_dev_docs if '\t' in doc]
+
+            with codecs.open(fold_test_file_path, 'r') as file_descr:
+                test_docs = file_descr.read().strip().split('<DOCSTART>\n\n')
+                test_docs = [doc.strip() for doc in test_docs if '\t' in doc]
+
+            folds_data.append([set(train_dev_docs), set(test_docs)])
+            folds_all_test.update(test_docs)
+            folds_all_train_dev.update(train_dev_docs)
+
+        assert len(folds_all_train_dev) == len(folds_all_test)
+        assert len(folds_all_train_dev.difference(folds_all_test)) == 0
+        assert len(folds_all_test.difference(folds_all_train_dev)) == 0 #certainly redundant
+
+        for train_dev, test in folds_data:
+            assert len(train_dev.intersection(test)) == 0
+            fold_data = train_dev.union(test)
+            assert len(fold_data) == len(folds_all_test)
+            assert len(fold_data.difference(folds_all_test)) == 0
+            assert len(folds_all_test.difference(fold_data)) == 0 #certainly redundant
+
+        print(f'Total doc count = {len(folds_all_test)}')
+        print('ALL OK')
