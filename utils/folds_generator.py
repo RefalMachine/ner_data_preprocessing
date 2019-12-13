@@ -39,7 +39,7 @@ class FoldsGenerator():
         for i in range(len(folds)):
             data_root = folds_masked_dir.replace('{}', str(i + 1))
             if not os.path.exists(data_root):
-                os.mkdir(data_root)
+                os.makedirs(data_root)
 
             train_dev = []
             for j in range(len(folds)):
