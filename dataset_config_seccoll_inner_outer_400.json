@@ -1,0 +1,110 @@
+[
+    {
+        "output": "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_15_01_20/seccoll_inner_outer_100_augm_1_17_01_20",
+        "input": [
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_13_12_19/seccoll_1_13_12_19",
+                "bert"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/outer_augm_400_hackers_18_12_19",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/outer_augm_400_viruses_18_12_19",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/folds_15_01_20/seccoll_inner_augm_hackers_1_15_01_20",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/folds_15_01_20/seccoll_inner_augm_viruses_1_15_01_20",
+                "ann_format"
+            ]
+        ],
+        "test_path": "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_13_12_19/seccoll_1_13_12_19/test.txt",
+        "dev_path": null
+    },
+    {
+        "output": "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_15_01_20/seccoll_inner_outer_100_augm_2_17_01_20",
+        "input": [
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_13_12_19/seccoll_2_13_12_19",
+                "bert"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/outer_augm_400_hackers_18_12_19",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/outer_augm_400_viruses_18_12_19",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/folds_15_01_20/seccoll_inner_augm_hackers_2_15_01_20",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/folds_15_01_20/seccoll_inner_augm_viruses_2_15_01_20",
+                "ann_format"
+            ]
+        ],
+        "test_path": "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_13_12_19/seccoll_2_13_12_19/test.txt",
+        "dev_path": null
+    },
+    {
+        "output": "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_15_01_20/seccoll_inner_outer_100_augm_3_17_01_20",
+        "input": [
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_13_12_19/seccoll_3_13_12_19",
+                "bert"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/outer_augm_400_hackers_18_12_19",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/outer_augm_400_viruses_18_12_19",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/folds_15_01_20/seccoll_inner_augm_hackers_3_15_01_20",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/folds_15_01_20/seccoll_inner_augm_viruses_3_15_01_20",
+                "ann_format"
+            ]
+        ],
+        "test_path": "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_13_12_19/seccoll_3_13_12_19/test.txt",
+        "dev_path": null
+    },
+    {
+        "output": "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_15_01_20/seccoll_inner_outer_100_augm_4_17_01_20",
+        "input": [
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_13_12_19/seccoll_4_13_12_19",
+                "bert"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/outer_augm_400_hackers_18_12_19",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/outer_augm_400_viruses_18_12_19",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/folds_15_01_20/seccoll_inner_augm_hackers_4_15_01_20",
+                "ann_format"
+            ],
+            [
+                "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/ann_format/folds_15_01_20/seccoll_inner_augm_viruses_4_15_01_20",
+                "ann_format"
+            ]
+        ],
+        "test_path": "/hdd_var/mtikhomi/work_folder/projects/bert_ner_proj/data/folds_13_12_19/seccoll_4_13_12_19/test.txt",
+        "dev_path": null
+    }
+]
